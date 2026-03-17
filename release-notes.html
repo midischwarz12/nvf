@@ -1839,6 +1839,11 @@ setting. Use <code>workspaces</code> instead:</p>
 settings (nvf's <a class="option-reference" href="options.html#option-vim-keymaps"><code class="nixos-option">vim.keymaps</code></a>)</li>
 </ul>
 </li>
+<li>
+<p><code>languages.{terraform,hcl}</code>: LSP servers now default to <code>tofu-ls</code>. While this
+is unlikely to cause any noticeable change in behavior or breakage, it's
+mentioned just in case.</p>
+</li>
 </ul>
 <p><a href="https://github.com/snoweuph">Snoweuph</a></p>
 <ul>
@@ -1919,6 +1924,17 @@ hard-coded options as default values.</li>
 <p><a href="https://github.com/Libadoxon">Libadoxon</a>:</p>
 <ul>
 <li><code>toggleterm</code> open map now also works when in terminal mode</li>
+</ul>
+<p><a href="https://github.com/ppenguin">ppenguin</a>:</p>
+<ul>
+<li>Improved/harmonized for <code>terraform</code> and <code>hcl</code>:
+<ul>
+<li>formatting (use <code>terraform fmt</code> or <code>tofu fmt</code> for <code>tf</code> files)</li>
+<li>LSP config</li>
+<li>Added <code>tofu</code> and <code>tofu-ls</code> as (free) alternative to <code>terrraform</code> and
+<code>terraform-ls</code></li>
+</ul>
+</li>
 </ul>
 <p><a href="https://github.com/jtliang24">jtliang24</a>:</p>
 <ul>
